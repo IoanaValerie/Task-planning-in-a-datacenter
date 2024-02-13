@@ -10,7 +10,7 @@ MyHost:
   In this class, I created the task execution logic, using
 sleep, and I stored the tasks in a priority queue: priorityQueue,
 by priority, start time, and finally by ID. Every time I have
-accessed the queue I used synchronized, for correctness, considering
+accessed the queue I used synchronized, considering
 that 2 commands can be executed on it at the same time. I implemented the methods:
 1) shutdown, which has the role of stopping the execution of the node. To do this
 I got a member of the private instance shutDown which is initially false, but
